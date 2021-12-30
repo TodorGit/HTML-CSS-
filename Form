@@ -6,27 +6,27 @@
      <hr>
      <form id="survey-form">
        <fieldset>
-         <label id="name-label" >Please Enter your names: <input id="name" type="text" name="names" placeholder="Please enter your full name"> </label>
+         <label id="name-label" >Please Enter your names: <input id="name" type="text" name="names" placeholder="Please enter your full name" required> </label>
          <label id="email-label">Please Enter your email: <input id="email" type="email" name="email" required placeholder="Please enter your email"> </label>
-         <label id="number-label">Years of experience: <input id="number" type="number" name="experience" min="1" max="30" placeholder="30" > </label>
+         <label id="number-label">Years of experience: <input id="number" type="number" name="experience" min="1" max="30" placeholder="30" required > </label>
          </fieldset>
        <hr>
        <fieldset>
          <label> <h4>Which of these languages are you familiar with?</h4>
            <select id="dropdown">
-             <option value="">please choose an option</option>
-             <option value="1">C++</option>
-             <option value="2">Python</option>
-             <option value="3">JavaScript</option>
-             <option value="4">C#</option>
+             <option value="" selected>please choose an option</option>
+             <option value="first_option">C++</option>
+             <option value="second_option">Python</option>
+             <option value="first_option">JavaScript</option>
+             <option value="second_option">C#</option>
            </select>
          </label>
        </fieldset>
        <hr>
        <fieldset> <h4>How hard do you find it to learn a programming language?</h4>
-         <label><input class="radio" type="radio" name="answer">Easy</label>
-         <label><input class="radio" type="radio" name="answer">Tolerable</label>
-         <label><input class="radio" type="radio" name="answer">My brain is about to burst</label>
+         <label><input class="radio" type="radio" name="answer" value="answer">Easy</label>
+         <label><input class="radio" type="radio" name="answer" value="answer">Tolerable</label>
+         <label><input class="radio" type="radio" name="answer" value="answer">My brain is about to burst</label>
        </fieldset>
        <hr>
        <fieldset><h4>Please choose which of these is not a programming languange</h4>
@@ -43,6 +43,7 @@
        <input id="submit" type="submit"/>
      </form>
 </body>
+
 
 //CSS
 
