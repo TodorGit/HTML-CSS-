@@ -1,0 +1,117 @@
+  
+  //HTML
+  <body>
+     <h1 id="title">Coding Experience Survey</h1>
+     <p id="description" ><b>A safe place to share your experience with coding</b></p>
+     <hr>
+     <form id="survey-form">
+       <fieldset>
+         <label id="name">Please Enter your names: <input id="name-label" type="text" name="names" placeholder="Please enter your full name"> </label>
+         <label id="email">Please Enter your email: <input id="email-label" type="email" name="names" required placeholder="Please enter your email"> </label>
+         <label id="number">Years of experience: <input id="number-label" type="number" name="experience" min="1" max="30" placeholder="30" > </label>
+         </fieldset>
+       <hr>
+       <fieldset>
+         <label> <h4>Which of these languages are you familiar with?</h4>
+           <select id="dropdown">
+             <option value="">please choose an option</option>
+             <option value="1">C++</option>
+             <option value="2">Python</option>
+             <option value="3">JavaScript</option>
+             <option value="4">C#</option>
+           </select>
+         </label>
+       </fieldset>
+       <hr>
+       <fieldset> <h4>How hard do you find it to learn a programming language?</h4>
+         <label><input class="radio" type="radio" name="answer">Easy</label>
+         <label><input class="radio" type="radio" name="answer">Tolerable</label>
+         <label><input class="radio" type="radio" name="answer">My brain is about to burst</label>
+       </fieldset>
+       <hr>
+       <fieldset><h4>Please choose which of these is not a programming languange</h4>
+         <label><input class="checkbox" type="checkbox" value="1"/>jQuery</label>
+         <label><input class="checkbox" type="checkbox" value="2"/>Java</label>
+         <label><input class="checkbox" type="checkbox" value="3"/>Bootstrap</label>
+         <label><input class="checkbox"type="checkbox" value="4"/>HTML</label>
+         <label><input class="checkbox"type="checkbox" value="5"/>Solidity</label>
+         <hr>
+         <label><h4>Please leave a comment!</h4>
+          <textarea name="comment" rows="4" cols="40" placeholder="Coding makes me ..."></textarea>
+			  </label>
+       </fieldset>
+       <input id="submit" type="submit"/>
+     </form>
+</body>
+
+
+//CSS
+
+body{
+  width:100%;
+  height:100vh;
+  margin:0;
+  background-image:url("https://html.sammy-codes.com/images/background.jpg");
+    background-size:cover;
+  color:#041C32;
+  font-size: 18px;
+  font-family:Helvetica;
+}
+
+h1,p{
+  margin: 0.7em auto;
+  text-align:center;
+}
+
+hr{
+  width:15%;
+  border: 1px solid #0a0a23;
+}
+
+form{
+  width:50vw;
+  margin:0 auto;
+  min-width:300px;
+  max-width:600px;
+}
+
+fieldset{
+  border:none;
+  padding: 2rem 0;
+}
+
+label{
+  display:block;
+  margin: 0.3rem o;
+}
+
+input,select,textarea{
+  width:100%;
+  min-height: 1em;
+  margin: 0 0 1em 0; 
+}
+
+input, textarea {
+  border: 3px solid #0a0a23;
+  color: #0a0a23;
+}
+
+.radio, .checkbox{
+  width:unset;
+  vertical-align:middle;
+  margin: 0 1em 0 0;
+
+}
+
+input[type="submit"] {
+  display: block;
+  width: 40%;
+  margin: 1em auto;
+  height:1.5em;
+  font-size: 1.1rem;
+  background-color: #041C32;
+  border-radius: 50px;
+  border:1px solid white;
+  min-width: 300px;
+  color:#fff;
+}
