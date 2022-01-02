@@ -1,0 +1,132 @@
+///HTML///
+
+<body>
+  <main id="main">
+    <div class="header">
+    <h1 id="title">Salvador Domingo Felipe Jacinto Dalí i Domènech</h1>
+    <p>A Great Artist</p>
+    <div id="img-div"><img id="image" src="https://www.worldatlas.com/r/w1200/upload/86/8d/f4/shutterstock-336294608.jpg"/>
+      <figcaption id="img-caption">A drawing of Salvador</figcaption>
+    </div>
+    </div>
+    <hr>
+    <div id="tribute-info">
+      <h2 id="img-caption">The Lifeline of a Great Artist</h2>
+      <ul>
+        <li>1904 -	Salvador Felipe Jacinto Dali i Domènech is born in Figueres, Spain on May 11.       </li>
+        <li>1922 - He attends the San Fernando Royal Academy of Fine Arts in Madrid.</li>
+        <li>1925 - First one-man exhibition in Barcelona.</li>
+        <li>1934 - Gala and Dali marry in a civil ceremony on January 30.</li>
+        <li>1940 - Following the German occupation of Paris, the Dali’s flee to America to live for the next eight years, working with figures like Hitchcock and Disney. They divide their time between New York and California.</li>
+        <li>1944 - Dali publishes his novel Rostras Oscuras (Hidden Faces)</li>
+        <li>1974 - Dali’s museum, the Teatre-Museu Dali, in Figueres, Spain, opens on September 28.</li>
+        <li>1989 - Dali dies of heart failure on January 23 in Figueres. He is buried under the geodesic dome in the Teatre-Museu Dali.</li>
+      </ul>
+    </div>
+    
+    <h2>You can find out more about this inredible artist on his <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD"><span>Wikipedia Page</span></a><h2>
+      
+      <hr>
+  </main>
+  
+</body>
+
+
+///CSS///
+
+body{
+  margin:0;
+  padding:0;
+  font-size:18px;
+  font-family:Helvetica;
+  background-color:#CCD1E4;
+}
+
+
+.header{
+width:80%;
+margin:0 auto;
+text-align:center;
+background-color:#D6E5FA;
+border: 1px solid #FFF9F9;
+border-radius:10px;
+}
+
+.header > p{
+font-weight:bold;
+margin:2rem;
+}
+
+.header > h2{
+padding:0 0 1.4rem 0;
+}
+
+.header > div > img{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+ border-radius: 10px;
+ max-width:600px;
+}
+
+
+figcaption{
+  margin-top: -2.5rem;
+  margin-bottom:3rem;
+  font-style:italic;
+  font-size:14px;
+}
+
+hr{
+  border: 1px solid #D6E5FA;
+  margin: 5rem auto;
+  width:20%
+}
+
+#tribute-info{
+  margin: 0 auto;
+  line-height:2rem;
+  width:80%;
+  border: 5px solid #D6E5FA;
+  border-radius:10px;
+}
+
+#tribute-info > h2{
+  text-align:center;
+  padding:1rem 0;
+}
+
+#tribute-info > ul{
+  list-style:none;
+  width:40%;
+    margin:0 auto;
+}
+
+#tribute-info > ul > li{
+margin: 1rem 0;
+font-style:italic;
+}
+
+h2{
+  width:80%;
+  text-align:center;
+  margin:0 auto;
+  padding-top:3rem;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:visited {
+  color:black;
+  style:none;
+}
+
+span{
+  border: 3px solid #D6E5FA;
+  padding:0.4rem;
+  border-radius:20px;
+  font-size: 1.5rem;
+  background-color:#D6E5FA;
+}
